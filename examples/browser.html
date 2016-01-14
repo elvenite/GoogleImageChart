@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf8">
+  <title>Test</title>
+</head>
+<body>
+<script src="../GoogleImageChart.js"></script>
+<script>
+  var c = new Chart();
+
+  // insert an array with values from 1-3
+  c.setData([3,2,1,2,3]);
+
+  var url = c.generate();
+
+  var img = document.createElement('img');
+  img.src = url;
+  document.body.appendChild(img);
+
+</script>
+</body>
+</html>

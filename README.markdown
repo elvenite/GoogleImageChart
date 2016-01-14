@@ -10,5 +10,7 @@ Pull requests are welcome.
 In Podio you have to copy and paste it in the calculation field, the same goes with Node JS, at least for now.
 
 # TODO
- - example file on how to use it, both in regular JS and Podio
- - Make it compatible as a Node module
+ - [ ] Override default options
+ - [ ] Add method setOption(key, value)
+ - [x] example file on how to use it, both in regular JS and Podio
+ - [x] Make it compatible as a Node module
