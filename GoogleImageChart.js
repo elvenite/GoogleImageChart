@@ -14,7 +14,8 @@
 
   'use strict';
 
-  function Chart(){
+  function Chart(options){
+    options = options || {};
     this.VERSION = '0.1';
     this.url = 'https://chart.googleapis.com/chart?';
     this.data = [];
@@ -25,7 +26,7 @@
       '45713a', // 3 green
     ];
 
-    this.options = this.getDefaults();
+    this.setOptions(options);
     this.markerOptions = this.getMarkerDefaults();
   }
 
@@ -37,6 +38,18 @@
       chma: '6,6,6,6',
       chds: '0,3'
     };
+  };
+
+  Chart.prototype.setOptions = function(options){
+    var new_options = this.getDefaults();
+
+    for(var i in options){
+      if (options.hasOwnProperty(i)){
+        new_options[i] = options[i];
+      }
+    }
+
+    this.options = new_options;
   };
 
   Chart.prototype.getMarkerDefaults = function(){
@@ -95,7 +108,7 @@
 
     // generate options string
     for(var i in this.options){
-      option_string.push(i + '=' + this.options[i]);
+      option_string.push(i + '=' + encodeURIComponent(this.options[i]));
     }
 
     return this.url + option_string.join('&');
