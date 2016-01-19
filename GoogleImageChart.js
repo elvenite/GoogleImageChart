@@ -32,11 +32,10 @@
 
   Chart.prototype.getDefaults = function(){
     return {
-      chs :  '200x50',
-      cht :  'ls',
-      chco: 'aaaaaa',
-      chma: '6,6,6,6',
-      chds: '0,3'
+      chs :  '400x100',
+      cht :  'bvs',
+      chds: 'a',
+      chxt: 'x,y'
     };
   };
 
@@ -70,8 +69,9 @@
     });
 
     this.raw_data = data;
+  };
 
-    // set markers
+  Chart.prototype.setMarkers = function(data){
     var markers = [];
     for(var i in this.data){
       var mark = [];
