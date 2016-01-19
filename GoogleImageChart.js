@@ -16,7 +16,7 @@
 
   function Chart(options){
     options = options || {};
-    this.VERSION = '0.1';
+    this.VERSION = '0.2';
     this.url = 'https://chart.googleapis.com/chart?';
     this.data = [];
     this.colors = [

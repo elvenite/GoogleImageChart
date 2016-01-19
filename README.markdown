@@ -9,11 +9,9 @@ Pull requests are welcome.
 # How to use it
 In Podio you have to copy and paste it in the calculation field, then follow the NodeJS example (except the require line since it's already inline). For use in browsers, please see the example folder.
 
-# Settings
- - Markers (true|false)
-
 # TODO
- - [ ] Override default options
+ - [x] Override default options
+ - [ ] Example with markers
  - [ ] Add method setOption(key, value)
  - [x] example file on how to use it, both in regular JS and Podio
  - [x] Make it compatible as a Node module
