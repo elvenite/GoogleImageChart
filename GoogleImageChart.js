@@ -1,6 +1,6 @@
 /**
  * Google Image Chart URL Generator
- * @author: Carl-Fredrik Herö, Elvenite AB
+ * @author: Carl-Fredrik Herö, Elvenite AB <carl-fredrik.hero@elvenite.se>
  * @link: https://github.com/elvenite/GoogleImageChart
  */
 
