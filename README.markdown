@@ -7,7 +7,7 @@ The first version was built just to handle a specific use case which means that 
 Pull requests are welcome.
 
 # How to use it
-In Podio you have to copy and paste it in the calculation field, the same goes with Node JS, at least for now.
+In Podio you have to copy and paste it in the calculation field, then follow the NodeJS example (except the require line since it's already inline). For use in browsers, please see the example folder.
 
 # TODO
  - [ ] Override default options

@@ -1,11 +1,12 @@
 /**
  * Google Image Chart URL Generator
  * @author: Carl-Fredrik Herö, Elvenite AB
+ * @link: https://github.com/elvenite/GoogleImageChart
  */
 
 (function(global, factory){
   if ( typeof module === "object" && typeof module.exports === "object" ) {
-    module.exports = factory(global, true)
+    module.exports = factory(global, true);
   } else {
     factory(global);
   }
@@ -36,7 +37,7 @@
       chma: '6,6,6,6',
       chds: '0,3'
     };
-  }
+  };
 
   Chart.prototype.getMarkerDefaults = function(){
     return {
@@ -44,7 +45,7 @@
       color :  'aaaaaa',
       size: 12
     };
-  }
+  };
 
   Chart.prototype.setData = function(data){
     if (!data || !Array.isArray(data)){
@@ -78,7 +79,7 @@
       mark.push(this.markerOptions.size);
 
       markers.push(mark.join(','));
-    };
+    }
 
     this.options.chm = markers.join('|');
   };
